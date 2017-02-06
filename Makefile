@@ -26,6 +26,9 @@ install.dependencies:
 # Selenium Server
 # ===================================================================
 
+run: run.selenium
+
+selenium.run: run.selenium
 
 run.selenium:
 	selenium-server -port 4444
