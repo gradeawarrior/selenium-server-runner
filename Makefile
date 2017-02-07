@@ -1,4 +1,4 @@
-CWD = $(shell pwd);
+CWD = $(shell pwd)
 SELENIUM_SERVER = http://localhost:4444
 BROWSER_TYPE = firefox
 FIREFOX_WEBDRIVER_VERSION ?= 0.14.0
