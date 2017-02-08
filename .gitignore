@@ -12,3 +12,4 @@ logs/
 ## Ignore Selenium drivers
 geckodriver*
 chromedriver*
+phantomjs*
