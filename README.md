@@ -1,12 +1,13 @@
 # Selenium-Server-Runner
 
+_**Note:** This project is no longer supported considering that there are more important things to be doing rather than dependency management of browser targets. I think the project may still be relevant for those who want to dig into manually setting up a Selenium environment locally. My recommendation for others is to leverage [Docker for Mac](https://docs.docker.com/docker-for-mac/) and [Docker Selenium](https://github.com/SeleniumHQ/docker-selenium). Setup was simple and offers a huge set of capabilities OOTB!_
+
 This project greatly simplifies the (i) setup, (ii) configuration, and (iii) running of the selenium-server from a Mac. Assuming you have the various browsers installed and this project checked-out, the steps for starting the server are:
 
 	make install.dependencies
 	make run.selenium
 
 The following target browsers are supported:
-
 
 - [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 - [Gecko (Firefox) Driver](https://github.com/mozilla/geckodriver/releases)
@@ -25,6 +26,7 @@ This project was developed on a Mac, and therefore several of the Make targets r
 * `curl`
 * Latest version of Firefox
 * Latest version of Chrome
+* Java 7+
 * [Homebrew](http://brew.sh/)
 
 ### Optional Installation
@@ -92,9 +94,13 @@ TODO
 ## References
 
 * Selenium
+* [Selenium-Server-Standalone versions](https://selenium-release.storage.googleapis.com/index.html)
 * WebDriver
 	* [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 	* [Gecko (Firefox) Driver](https://github.com/mozilla/geckodriver/releases)
 	* [SafariDriver](https://github.com/SeleniumHQ/selenium/wiki/SafariDriver)
 	* HTMLUnit
 	* [PhantomJS](http://phantomjs.org/download.html)
+* Docker:
+	* [Docker for Mac](https://docs.docker.com/docker-for-mac/)
+	* [Docker Selenium](https://github.com/SeleniumHQ/docker-selenium)
